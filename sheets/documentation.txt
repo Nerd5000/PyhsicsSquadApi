@@ -1,0 +1,29 @@
+============create.php============
+-this file handle creation of new 
+ element on the json file.
+-request is POST has json data.
+-data dname,day,todo.
+===============END===============
+
+============delete.php============
+-this file handle deletion of last,
+ all the elements on the json file.
+-request is GET.
+-parameters all val =(true/false).
+-true delete all elements.
+-false delete first element.
+===============END===============
+
+============read.php============
+-this file handle reading of all
+ data in json file.
+-request is GET.
+-has no parameters.
+===============END===============
+
+============sheets.php============
+-this file has functions that
+ handle CRD operations.
+-file has no input or output.
+-has no parameters.
+===============END===============
