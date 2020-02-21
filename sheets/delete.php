@@ -3,13 +3,15 @@ include 'sheets.php';
 header("Access-Control-Allow-Origin: *");
 
 
-if (!isset($_GET['all'])) {
+if (!isset($_GET['all']) || !isset($_GET['first']) || !isset($_GET['first'])) {
     exit;
 }
 
 if ($_GET['all'] == 'true') {
     deleteAllSheets();
-} elseif ($_GET['all'] == 'false') {
+} elseif ($_GET['first'] == 'true') {
     deleteFirstSheet();
+} elseif ($_GET['last'] == 'true') {
+    deleteLastSheet();
 }
 echo 'done';

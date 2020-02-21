@@ -30,6 +30,12 @@ function deleteAllSheets()
 
     putJson([]);
 }
+function deleteLastSheet()
+{
+    $Sheets = getSheets();
+    array_pop($Sheets);
+    putJson($Sheets);
+}
 function deleteFirstSheet()
 {
     $Sheets = getSheets();

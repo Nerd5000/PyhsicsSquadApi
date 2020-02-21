@@ -9,9 +9,14 @@
 -this file handle deletion of last,
  all the elements on the json file.
 -request is GET.
--parameters all val =(true/false).
--true delete all elements.
--false delete first element.
+-parameters all last first val =
+ (true/false).
+-all true delete all elements.
+-all false nothing.
+-first true delete first element.
+-first false nothing.
+-last true delete last element.
+-last false nothing.
 ===============END===============
 
 ============read.php============
